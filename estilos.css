@@ -1,0 +1,281 @@
+﻿/* ==========================================
+   LAMPAS — Tramitadora Legal
+   Colores oficiales:
+   - Fondo crema: #F8F5F0
+   - Azul oscuro: #0A2342
+   - Azul medio: #1E3A5F
+   - Dorado brillante: #D4AF37
+   - Dorado claro: #E6C200
+   
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #F8F5F0;
+    color: #333333;
+    line-height: 1.7;
+}
+
+/* ---------- ENCABEZADO ---------- */
+header {
+    background: linear-gradient(180deg, #0A2342 0%, #1E3A5F 100%);
+    color: #F8F5F0;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #E6C200;
+}
+
+.subtitulo {
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.9;
+    margin-top: 5px;
+}
+
+.decoracion {
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+    margin: 12px auto;
+}
+
+.eslogan {
+    font-size: 13px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+/* ---------- MENÚ DE NAVEGACIÓN ---------- */
+nav {
+    background-color: #0A2342;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px 0;
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+    border-bottom: 2px solid #D4AF37;
+}
+
+.menu-btn {
+    background-color: transparent;
+    color: #F8F5F0;
+    border: none;
+    padding: 12px 16px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.menu-btn:hover {
+    color: #E6C200;
+    border-bottom: 2px solid #E6C200;
+}
+
+/* ---------- CONTENIDO PRINCIPAL ---------- */
+main {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.seccion {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(10, 35, 66, 0.06);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+h2 {
+    color: #0A2342;
+    font-size: 22px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #D4AF37;
+    display: inline-block;
+}
+
+.subtitulo-seccion {
+    text-align: center;
+    color: #666666;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333333;
+}
+
+strong {
+    color: #0A2342;
+}
+
+h3 {
+    color: #0A2342;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.servicio-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #E0E0E0;
+}
+
+.valores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.valor-item {
+    flex: 1 1 40%;
+    background-color: rgba(212, 175, 55, 0.06);
+    padding: 18px 12px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.valor-item h4 {
+    color: #0A2342;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.valor-item p {
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #555555;
+}
+
+.frase-destacada {
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 20px;
+    color: #D4AF37;
+    font-weight: 600;
+}
+
+.contacto-info {
+    background-color: rgba(10, 35, 66, 0.02);
+    padding: 22px;
+    border-radius: 8px;
+    border-left: 3px solid #D4AF37;
+    margin: 25px 0;
+}
+
+/* ---------- BOTONES ---------- */
+.boton-principal {
+    background: linear-gradient(90deg, #D4AF37, #E6C200);
+    color: #0A2342;
+    font-weight: 600;
+    border: none;
+    padding: 14px 30px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.25);
+}
+
+.boton-principal:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.35);
+}
+
+/* ---------- PIE DE PÁGINA ---------- */
+footer {
+    background-color: #0A2342;
+    color: #F8F5F0;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 14px;
+    margin-top: 40px;
+    border-top: 3px solid #D4AF37;
+}
+
+footer p {
+    color: #cccccc;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+/* === CABECERA CON TRES COLUMNAS === */
+.contenedor-cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 320px;
+}
+
+/* Cada columna ocupa el mismo ancho */
+.lado-imagenes, .logo-central, .lado-video {
+    width: 31%;
+    text-align: center;
+}
+
+/* Logo central */
+.logo-grande {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Imagen lateral izquierda */
+.imagen-lateral {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 2px solid #D4AF37;
+}
+
+/* Video lateral derecho */
+.video-lateral {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 2px solid #D4AF37;
+}
+
+/* 📱 Adaptable a celulares */
+@media (max-width: 900px) {
+    .contenedor-cabecera {
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px 15px;
+    }
+    .lado-imagenes, .logo-central, .lado-video {
+        width: 95%;
+    }
+}
